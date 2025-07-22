@@ -33,7 +33,7 @@ export const MY_DATE_FORMATS = {
   ],
   imports: [
     BrowserModule,
-  AppRoutingModule,
+    AppRoutingModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
     MatDatepickerModule,

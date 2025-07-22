@@ -1,7 +1,7 @@
 import { Component, inject, OnDestroy, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
-import { ProducBehaviorService } from '../../state/product.service';
-import { CartBehaviorService } from '../../state/cart.service';
+import { ProducBehaviorService } from '../../services/state/product.service';
+import { CartBehaviorService } from '../../services/state/cart.service';
 
 @Component({
   selector: 'app-product-detail',

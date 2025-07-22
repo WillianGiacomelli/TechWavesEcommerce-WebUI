@@ -1,5 +1,5 @@
 import { Injectable, Signal, signal, WritableSignal, inject } from '@angular/core';
-import { IndexedDbService } from '../../../core/utils/indexedDB/indexedDb.service';
+import { IndexedDbService } from '../../../../core/utils/indexedDB/indexedDb.service';
 import { firstValueFrom } from 'rxjs';
 
 @Injectable({

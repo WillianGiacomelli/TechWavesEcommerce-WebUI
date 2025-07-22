@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { AuthBehaviorService } from '../../services/behavior/auth-behavior.service';
+import { AuthBehaviorService } from '../../services/state/auth-behavior.service';
 
 @Component({
   selector: 'app-login',

@@ -1,5 +1,5 @@
 import { Component, inject, OnInit } from '@angular/core';
-import { CartBehaviorService } from '../../../../state/cart.service';
+import { CartBehaviorService } from '../../../../services/state/cart.service';
 
 @Component({
   selector: 'app-public-navbar',
