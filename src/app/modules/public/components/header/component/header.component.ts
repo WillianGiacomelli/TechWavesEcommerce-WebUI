@@ -1,6 +1,7 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { MenuCategorieService } from '../../../services/http/menu-categorie.service';
 import CategoryModel from '../../../../../core/models/navbar/category/category.model';
+import ResponseModel from '../../../../../core/models/response/base/response.model';
 
 @Component({
   selector: 'app-public-header',
@@ -18,8 +19,8 @@ export class HeaderComponent  implements OnInit{
 
   private _getMenuCategories(): void {
     this._menuCategoryService.getMenuCategories().subscribe({
-      next: (categories: CategoryModel[]) => {
-        this.menuCategories = categories;
+      next: (categories: ResponseModel<CategoryModel[]>) => {
+        this.menuCategories = categories.data || null;
       },
       error: (error) => {
         console.error('Error fetching menu categories:', error);
